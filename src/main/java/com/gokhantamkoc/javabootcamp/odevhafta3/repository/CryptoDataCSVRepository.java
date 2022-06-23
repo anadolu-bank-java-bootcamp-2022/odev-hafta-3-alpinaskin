@@ -35,7 +35,6 @@ public class CryptoDataCSVRepository implements CSVRepository {
 					Double.parseDouble(data[5]), // low
 					Double.parseDouble(data[6]), // close
 					Double.parseDouble(data[7])); // volume
-			System.out.println("Candle değer: " + candle.getTime() + "  close:" + candle.getClose() + " high:" + candle.getHigh());
 			return candle;
 		}).collect(Collectors.toList());
 		// Bu alandan sonra kalan kod'a dokunmayiniz.
